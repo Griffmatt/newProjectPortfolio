@@ -1,0 +1,96 @@
+$mainBrownColor:(#FFDCA8);
+$secondaryBrownColor:(#d7b88b);
+$mainPurpleColor:(#D701C2);
+$mainOrangeColor:(#FF6533);
+$mainGreenColor:(#00EA33);
+$mainYellowColor:(#F6DC31);
+$mainBlueColor:(#106ED3);
+$mainBLackColor:(#000);
+
+@font-face {
+    font-family: 'Bebas';
+    font-style: normal;
+    src: url('./Bebas-Regular.otf') format('opentype');
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    background-color: $mainBrownColor;
+    font-family: 'Bebas';
+}
+
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 2rem;
+}
+
+.container{
+    max-width: 1600px;
+    width: 100vw;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        font-size: 2rem; 
+        cursor: pointer;
+        li:hover{
+            opacity: .5;
+        }
+    }
+
+}
+
+.row{
+    text-align: center;
+    h1{
+        margin-bottom: 0;
+    }
+    h3{
+        margin-top: 0;
+    }
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 600px;
+    border-right: solid black 12px;
+    border-bottom: solid black 12px;
+    border-left: black solid 3px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 12px;
+    background-color: $secondaryBrownColor;
+    margin: 10px;
+    .cardHead{
+        border: black solid 3px;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: #106ED3;
+    }
+    .cardBody{
+        img{
+            width: 100%;
+            height: auto;
+        }
+        p{
+            padding: 10px;
+        }
+    }
+}
